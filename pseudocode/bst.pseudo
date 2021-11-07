@@ -1,0 +1,35 @@
+//PROBLEM: search for node with key
+//INPUTS: @T:tree_head  @key:int
+//output: node with the key @key
+//examples: t=tree_head,key=8 return node-8
+          6   
+    4           8
+3      5     7     9
+
+TreeSearch(T,key):
+
+    T.value?
+        1)=key | null :
+            return(T)
+        2)>key:
+            return(TreeSearch(T.left))
+        3)<key:
+            return(TreeSearch(T.right))
+
+//PROBLEM: find tree's height
+//INPUT: @T:binary_tree
+//OUTPUT: height:int
+Height(T):
+    T.value:
+        null:
+            return 0
+        default:
+            return (1+MAX{Height(T.left),Height(T.right)}
+
+
+//PROBLEM: find tree's depth
+//INPUT: @T:binary_tree
+//OUTPUT: @depth:int
+
+Depth(T):
+    //

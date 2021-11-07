@@ -11,8 +11,9 @@ const merge=(arr,next)=>{
 const map =(list,next)=>{
     return list.flatMap(arr=>merge(arr,next))
 }
-export const permutations =(str)=>{
+const permutations =(str)=>{
     const strArr = str.split('').slice(1)
     return strArr.reduce((acc,cur)=>map(acc,cur),[[str[0]]]).map(res=>res.join())
 }
+
 

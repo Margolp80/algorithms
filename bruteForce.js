@@ -1,3 +1,4 @@
+
 const request = (attempt, seq,depth) => {
     const mappedAttempt = attempt.map(rep => seq[rep]).slice(0,depth).join('')
     console.log(`ATTEMPTING ${mappedAttempt}: \n`);
